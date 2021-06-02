@@ -74,11 +74,11 @@ font-family: 'Poppins', sans-serif;
 }
 
 a {
-  color: #3E656A;
+  color: ##1658C1;
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #cc6540;
+  color: #B4AC4E;
   text-decoration: underline; /* Underlining when hovering over a link */
 
   a:visited { /* visited link */
