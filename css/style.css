@@ -43,7 +43,6 @@ font-family: 'Poppins', sans-serif;
   img {
     width: 100%;
   }
-}
 
 .button {
   display: inline-block;
@@ -78,12 +77,13 @@ font-family: 'Poppins', sans-serif;
 }
 
 a {
-  color: ##1658C1;
+  color: #1658C1;
   text-decoration: none; /* No underlining */
 }
 a:hover {
   color: #B4AC4E;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+}
 
   a:visited { /* visited link */
   color: #ff7f50;
