@@ -4,12 +4,49 @@ Primary Color (Yellow green): #B4AC4E;
 Secondary Color (Blue Green): #3E656A;
 */
 header {
-  border-bottom: 3px solid #4a4a4a;
+  background-color: #B4AC4E;
+      text-align: center;
+       padding: 10px 0;
+       box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+       position: relative;
 }
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%
+}
+nav > ul > li {
+display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav > ul > li> a:visited{
+  color: #1658C1
+}
+
+nav > ul > li> a:hover {
+  color: #B4AC4E;
+}
+
+nav > ul > li> a:active {
+  color: #DB229B
+}
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #hero {
+    background-color: #F2F2F2;
+  }
 body {
   background-color: #ffffff;
-   padding: 10px;
-   margin: 10px;
 font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -49,11 +86,11 @@ font-family: 'Poppins', sans-serif;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #B4AC4E;
   color: #ffffff;
-  /* needed to override the default link color */
+  text-align: center;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #B4AC4E;
+  border-bottom: 2px solid #3E656A;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -68,7 +105,9 @@ font-family: 'Poppins', sans-serif;
   background-color: transparent;
   color: #B4AC4E;
   text-transform: uppercase;
-  border: 2px solid #B4AC4E;
+  border: 2px solid #3E656A;
+  margin: 10px;
+  text-align: center;
 }
 
 .button.contact:hover {
@@ -78,7 +117,7 @@ font-family: 'Poppins', sans-serif;
 
 a {
   color: #1658C1;
-  text-decoration: none; /* No underlining */
+/* No underlining */
 }
 a:hover {
   color: #B4AC4E;
@@ -86,8 +125,61 @@ a:hover {
 }
 
   a:visited { /* visited link */
-  color: #ff7f50;
+  color: #ffffff;
 }
 a:active { /* selected link */
   color: #994c30;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 10px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#mywork .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero {
+  text-align: center; /* Centers text */
+}
+
+#hero p {
+  text-align:left
+}
+
+#mywork {
+  text-align: center;
+}
+
+#mywork p {
+  text-align: left;
+}
+
+#contact {
+  text-align: center;
+  padding: 15px 0;
+}
+
+#skills h3
+{text-align: left}
+
+#skills ul {
+  text-align: left
+}
+
+.logo {
+  max-width: 250px;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 20px;
 }
