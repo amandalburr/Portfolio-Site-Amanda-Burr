@@ -139,7 +139,6 @@ a:active { /* selected link */
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-#mywork .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 #hero {
   text-align: center; /* Centers text */
@@ -182,4 +181,22 @@ a:active { /* selected link */
 
 main {
   padding-top: 20px;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
