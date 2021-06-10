@@ -5,100 +5,105 @@ Secondary Color (Blue Green): #3E656A;
 */
 header {
   background-color: #B4AC4E;
-      text-align: center;
-       padding: 10px 0;
-       box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-       position: relative;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
   display: inline-block;
   width: 100%
 }
-nav > ul > li {
-display: inline-block;
+
+nav>ul>li {
+  display: inline-block;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #4a4a4a;
 }
 
-nav > ul > li> a:visited{
-  color: #3E656A;
+nav>ul>li>a:visited {
+  color: #ffffff;
 }
 
-nav > ul > li> a:hover {
+nav>ul>li>a:hover {
   color: #403F3B;
 }
 
-nav > ul > li> a:active {
+nav>ul>li>a:active {
   color: #99ABAD
 }
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  #hero {
-    background-color: #F2F2F2;
-  }
+#hero span {
+  display: block;
+}
+
+#hero {
+  background-color: #F2F2F2;
+}
+
 body {
   background-color: #ffffff;
-font-family: 'Poppins', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
+  font-weight: 300;
+  line-height: 1.3;
 }
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-    color: #3E656A
-  }
 
-  h1 {
-    font-size: 2.75em;
-    font-weight: 500;
-  }
+h1, h2, h3, h4 {
+  line-height: 1.4;
+  color: #3E656A
+}
 
-  h2 {
-    font-size: 2.25em;
-    font-weight: 500;
-  }
+h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+}
 
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-  }
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
 
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
 
-  img {
-    width: 100%;
-  }
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #B4AC4E;
-  color: #ffffff;
-  text-align: center;
+  color: white;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #3E656A;
-  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
 
 .button.contact {
@@ -112,40 +117,45 @@ font-family: 'Poppins', sans-serif;
 
 .button.contact:hover {
   background-color: #403F3B;
-  color: #ffffff;
 }
 
 a {
   color: #1658C1;
-/* No underlining */
+  /* No underlining */
 }
+
 a:hover {
   color: #B4AC4E;
   text-decoration: underline;
 }
 
-  a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #ffffff;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 #hero {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 #hero p {
-  text-align:left
+  text-align: left
 }
 
 #mywork {
@@ -161,8 +171,9 @@ a:active { /* selected link */
   padding: 15px 0;
 }
 
-#skills h3
-{text-align: left}
+#skills h3 {
+  text-align: left
+}
 
 #skills ul {
   text-align: left
@@ -170,6 +181,14 @@ a:active { /* selected link */
 
 .logo {
   max-width: 250px;
+}
+
+#mystory {
+  text-align: center;
+}
+
+#mystory p {
+  text-align: left;
 }
 
 #hero {
@@ -183,20 +202,172 @@ main {
   padding-top: 20px;
 }
 
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 
-/* ==============================
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ===============
+===============
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  p {
+    background-color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+  }
 }
 
-/* ==============================
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero h3 {
+  text-align: left;
+}
+
+#mywork {
+  text-align: center;
+}
+
+#mywork .button {
+  float: left;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#contact {
+  font-size: 18px;
+}
+
+#hero p {
+  text-align: center;
+}
+
+#mywork p {
+  text-align: left;
+}
+
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+p {
+  background-color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.3;
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+
+h3 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#contact {
+  font-size: 24px;
+}
+
+#mystory ul {
+  font-size: 24px;
+}
+
+.button {
+  font-size: 22px;
+}
+
+nav>ul>li>a {
+  font-size: 24px;
+}
+
+#contact {
+  font-size: 24px;
+}
+
+#hero p {
+  text-align: center;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+#mywork p {
+  text-align: left;
+}
 }
