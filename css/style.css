@@ -297,6 +297,14 @@ Medium devices (640px and larger)
   float: left;
 }
 
+.button {
+  font-size: 16px;
+}
+
+nav>ul>li>a {
+  font-size: 20px;
+}
+
 h2 {
   font-size: 40px;
 }
@@ -363,7 +371,7 @@ h1 {
 }
 
 nav>ul>li>a {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 #contact {
