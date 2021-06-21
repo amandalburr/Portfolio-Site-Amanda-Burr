@@ -277,7 +277,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    min-width: 641px;
+    max-width: 250px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -420,6 +420,10 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  .logo {
+    max-width: 250px;
+  }
+
   p {
     background-color: #ffffff;
     font-family: 'Josefin Sans', sans-serif;
@@ -434,9 +438,6 @@ Large devices (1024px or larger)
     display: table;
   }
 
-  .logo {
-    min-width: 641px;
-  }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
