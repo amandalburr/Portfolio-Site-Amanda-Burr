@@ -9,30 +9,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    h1,
-    h2,
-    h3,
-    h4 {
-      color: #3E656A;
-    }
-  </style>
+  <script src="https://kit.fontawesome.com/e6aa32bfe8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header id="intro">
     <div class="container">
-      <picture>
-        <source srcset="img/Mylogo.jpg" media="(max-width:767px)">
-        <img class="logo" src="img/Mylogo@2x.jpg" alt="Amanda Burr logo">
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <picture>
+          <source srcset="img/Mylogo.jpg" media="(max-width:767px)">
+          <img class="logo" src="img/Mylogo@2x.jpg" alt="Amanda Burr logo">
+        </picture>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main id="mystory">
@@ -76,12 +72,12 @@
                     <li>InVision</li>
                   </ul>
                 </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </main>
   <footer id="contact">
     <div class="container">
@@ -121,6 +117,7 @@
       <p>Copyright Amanda L. Burr, 2021</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
