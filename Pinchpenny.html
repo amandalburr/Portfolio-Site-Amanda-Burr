@@ -3,31 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-	<title>Pinchpenny</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <title>Pinchpenny</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style>
-  h1, h2, h3, h4 { color: #3E656A; }
-</style>
+  <script src="https://kit.fontawesome.com/e6aa32bfe8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header id="intro">
-    <div>
-      <picture>
-        <source srcset="img/Mylogo.jpg" media="(max-width:767px)">
-        <img class="logo" src="img/Mylogo@2x.jpg" alt="Amanda Burr logo">
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <picture>
+          <source srcset="img/Mylogo.jpg" media="(max-width:767px)">
+          <img class="logo" src="img/Mylogo@2x.jpg" alt="Amanda Burr logo">
+        </picture>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main id="mywork">
@@ -142,10 +143,10 @@
     <div class="container">
       <h2>Get in touch</h2>
       <p>Do you like my work and want to get in touch?</p>
-  <a href="tel:6514289450">Call me at 651-428-9450</a> or Skype me at <a href="hello@careerfoundry.com">hello@careerfoundry.com.</a>
+      <a href="tel:6514289450">Call me at 651-428-9450</a> or Skype me at <a href="hello@careerfoundry.com">hello@careerfoundry.com.</a>
       <p>Prefer email?</p>
       <div>
-<a href="mailto:amandalburr@gmail.com" class="button contact">Send me an email</a>
+        <a href="mailto:amandalburr@gmail.com" class="button contact">Send me an email</a>
       </div>
       <div>
         <a href="https://www.linkedin.com/in/amanda-burr-50208a97/" target="_blank">
@@ -176,6 +177,7 @@
       <p>Copyright Amanda L. Burr, 2021</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
