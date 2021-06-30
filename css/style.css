@@ -17,9 +17,8 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-  marign: 0;
+  margin: 0;
 }
-
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -39,7 +38,6 @@ nav>ul>li>a:hover {
 nav>ul>li>a:active {
   color: #99ABAD
 }
-
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -112,13 +110,13 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #B4AC4E;
+  background-color: #3E656A;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #3E656A;
+  border-bottom: 2px solid #B4AC4E;
   transition: 0.2s opacity;
 }
 
@@ -246,6 +244,7 @@ main {
   to {
     transform: translate(200px, 50px);
   }
+
 }
 
 .cloud-front {
@@ -299,7 +298,7 @@ Medium devices (640px and larger)
   }
 
   nav>ul {
-    marign: 1em 0;
+    margin: 1em 0;
   }
 
   p {
@@ -438,7 +437,6 @@ Large devices (1024px or larger)
     display: table;
   }
 
-
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -452,7 +450,7 @@ Large devices (1024px or larger)
   }
 
   nav>ul {
-    marign: 1em 0;
+    margin: 1em 0;
   }
 
   #hello p {
@@ -542,5 +540,4 @@ Large devices (1024px or larger)
 
 #mywork p {
   text-align: left;
-}
 }
